@@ -37,7 +37,7 @@ namespace BetterTimeWarp
                 windowOpen = value;
             }
         }
-       // public ApplicationLauncherButton Button;
+
         ToolbarControl toolbarControl;
 
         private bool hasAdded = false;
@@ -342,17 +342,17 @@ namespace BetterTimeWarp
                     // if only a single icon, then adjustment needed
                     if (y == ICON_BASE + ICON_WIDTH)
                         y += 12;
-                    float f = 20f;
+                    float widthAndHeight = 20f;
                     float scale = 1f;
                     if (GameSettings.UI_SCALE != 1f || GameSettings.UI_SCALE_TIME != 1f)
                     {
                         scale = GameSettings.UI_SCALE * GameSettings.UI_SCALE_TIME;
-                        f *= scale;
+                        widthAndHeight *= scale;
                     }
 
                     if (buttonContent != null)
                     {
-                        var b = GUI.Toggle(new Rect(scale * y, 0f, f, f), windowOpen, buttonContent, skin.button);
+                        var b = GUI.Toggle(new Rect(scale * y, 0f, widthAndHeight, widthAndHeight), windowOpen, buttonContent, skin.button);
                         if (b != windowOpen)
                         {
                             windowOpen = b;

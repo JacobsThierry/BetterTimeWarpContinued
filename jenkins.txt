@@ -31,8 +31,8 @@
 
 # 3:SOURCEFILE, DESTDIR
 3:BetterTimeWarp.version,GameData/BetterTimeWarp
-#3:LICENSE.md,GameData/KerbalHotSeat
-#3:README.md,GameData/KerbalHotSeat
+3:License.txt,GameData/BetterTimeWarp
+3:Readme.md,GameData/BetterTimeWarp
 
 # 4:SOURCDIR, DESTDIR
 #4:Textures,GameData/ManeuverQueue/Textures
